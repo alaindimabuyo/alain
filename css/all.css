@@ -1,0 +1,98 @@
+.navhead, .lorem, .navfoot {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Verdana", "Geneva", sans-serif;
+  color: #FFF;
+  text-decoration: none; }
+  .navhead:hover, .lorem:hover, .navfoot:hover {
+    color: orange; }
+
+header {
+  height: 450px;
+  background: url(../img/head2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.logo {
+  height: 50px;
+  width: 50px;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 34px 0 0 34px; }
+  .logo:hover {
+    color: rgba(0, 0, 0, 0.5); }
+
+.navhead {
+  display: inline-block;
+  margin: 40px 40px 0 0; }
+
+.contenthead {
+  float: right;
+  margin-right: 50px; }
+
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.05;
+  margin-bottom: 20px;
+  clear: both;
+  padding-top: 100px;
+  font-family: "Verdana", "Geneva", sans-serif; }
+  h1 font {
+    size: 1000px;
+    weight: 200px; }
+
+span {
+  font-size: 50px;
+  display: inline-block;
+  padding: 0.5em;
+  border: white solid 8px;
+  padding: 0.2em 0.5em; }
+
+.kowt {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 700;
+  font-family: "Verdana", "Geneva", sans-serif;
+  letter-spacing: 1.05;
+  line-height: 1;
+  color: white; }
+
+footer {
+  height: 200px;
+  background: url(../img/head2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.lock {
+  padding: 50px 50px; }
+  .lock::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.logofoot {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 30px; }
+
+a {
+  margin-right: 20px; }
+
+.contentfoot {
+  float: left; }
+
+.copyright {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Verdana", "Geneva", sans-serif;
+  color: #FFA500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4); }
+
+/*# sourceMappingURL=all.css.map */

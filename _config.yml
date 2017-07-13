@@ -1,1 +1,13 @@
+#alainpogi Settings
+title: My Portfolio
+email: cutelykamanalo11@yahoo.com
+description: Design is not just what it looks like. Design is how it works.
+
+
+#Build Settings
 markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: css/css
+  style: :compressed

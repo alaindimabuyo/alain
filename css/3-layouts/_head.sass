@@ -1,0 +1,60 @@
+header
+  height: 450px
+  background: url(../img/head2.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.logo
+  +size(50px)
+  height: 50px
+  width: 50px
+
+  float: left
+  margin: 34px 0 0 34px
+  &:hover
+    color: rgba(0,0,0,0.5)
+
+.navhead
+  @extend %navigations
+  display: inline-block
+  margin: 40px 40px 0 0
+
+
+
+.contenthead
+  float: right
+  margin-right: 50px
+
+
+h1
+  text-align: center
+  font
+    size: 1000px
+    weight: 200px
+  color: white
+  text-transform: uppercase
+  letter-spacing: 1.05
+  margin-bottom: 20px
+  clear: both
+  padding-top: 100px
+  font-family: $verdana
+
+span
+  font-size: 50px
+  display: inline-block
+  padding: 0.5em
+  border: white solid 8px
+  padding: 0.2em 0.5em
+
+.kowt
+  text-align: center
+  font-size: 8px
+  font-weight: 700
+  font-family: $verdana
+  letter-spacing: 1.05
+  line-height: 1
+  color: white
+
+.lorem
+  @extend %navigations
