@@ -1,4 +1,4 @@
 # alain
-Resume Portfolio
+Portfolio Website
 work in progress
 https://alaindimabuyo.github.io/alain/
