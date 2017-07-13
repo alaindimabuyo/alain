@@ -13,7 +13,7 @@ h3 {
     color: orange; }
 
 header {
-  height: 500px;
+  height: 700px;
   background: url(../img/head2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -133,8 +133,7 @@ h3 {
 .face {
   height: 171px;
   width: 171px;
-  background: url(/img/face.jpg);
-  max-width: 171px; }
+  background: url(../img/face.jpg); }
 
 .toga {
   height: 100px;
