@@ -5,16 +5,44 @@ h3
   padding-top: 83px
 
 .circles
-  max-width: 1000px
+  max-width: 700px
   +display(flex)
-  padding-left: 425px
+
   padding-top: 27px
   +align-items(center)
+  margin: 0 auto
+  +justify-content(space-around)
 
 .face
   +size(171px)
   background: url(../img/face.jpg)
 
+@media screen and (max-width: 520px)
+  .circles
+    display: block
+    text-align: center
+
+  .toga
+    float: left
+    padding-top: 200px
+    padding-left: 100px
+
+  .cake
+    float: right
+    padding-top: 28px
+    padding-right: 70px
+
+  .lorem
+    margin-top: 200px
+    padding-top: 100px
+
+
+
+  .face
+    display: block
+    background-position: center center
+    width: auto
+    background-repeat: no-repeat
 
 .toga
   +size(100px)
@@ -27,4 +55,32 @@ h3
   padding-left: 10px
 
 .lorem
-  padding-top: 21px
+  color: #575757
+  padding: 0, 21px
+  max-width: 620px
+  margin: 0 auto
+  font-size: 20px
+  padding-top: 40px
+  text-align: center
+  font-weight: 300%
+  font-family: $georgia
+
+.skills
+  max-width: 700px
+  margin: 100px auto
+  color: #575757
+  +clearfix
+
+  .skillsection
+    width: 350px
+    float: left
+
+
+  .skillbar
+    margin-bottom: 30px
+    font-size: 0
+    span
+      display: inline-block
+      +size(10px)
+      @include linear-gradient(#e08f7f, #9f3b26)
+      margin-right: 0px

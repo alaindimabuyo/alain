@@ -49,13 +49,12 @@ h1 {
   h1 font {
     size: 1000px;
     weight: 200px; }
-
-span {
-  font-size: 50px;
-  display: inline-block;
-  padding: 0.5em;
-  border: white solid 8px;
-  padding: 0.2em 0.5em; }
+  h1 span {
+    font-size: 50px;
+    display: inline-block;
+    padding: 0.5em;
+    border: white solid 8px;
+    padding: 0.2em 0.5em; }
 
 .kowt {
   text-align: center;
@@ -68,6 +67,7 @@ span {
 
 .headtext {
   margin: auto;
+  padding-top: 100px;
   padding: auto; }
 
 footer {
@@ -110,7 +110,7 @@ h3 {
   padding-top: 83px; }
 
 .circles {
-  max-width: 1000px;
+  max-width: 700px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -118,7 +118,6 @@ h3 {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 425px;
   padding-top: 27px;
   -webkit-box-align: center;
   -moz-box-align: center;
@@ -128,13 +127,47 @@ h3 {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  margin: 0 auto;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
 
 .face {
   height: 171px;
   width: 171px;
   background: url(../img/face.jpg); }
 
+@media screen and (max-width: 520px) {
+  .circles {
+    display: block;
+    text-align: center; }
+
+  .toga {
+    float: left;
+    padding-top: 200px;
+    padding-left: 100px; }
+
+  .cake {
+    float: right;
+    padding-top: 28px;
+    padding-right: 70px; }
+
+  .lorem {
+    margin-top: 200px;
+    padding-top: 100px; }
+
+  .face {
+    display: block;
+    background-position: center center;
+    width: auto;
+    background-repeat: no-repeat; } }
 .toga {
   height: 100px;
   width: 100px;
@@ -147,6 +180,37 @@ h3 {
   padding-left: 10px; }
 
 .lorem {
-  padding-top: 21px; }
+  color: #575757;
+  padding: 0, 21px;
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 300%;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+
+.skills {
+  max-width: 700px;
+  margin: 100px auto;
+  color: #575757; }
+  .skills::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skills .skillsection {
+    width: 350px;
+    float: left; }
+  .skills .skillbar {
+    margin-bottom: 30px;
+    font-size: 0; }
+    .skills .skillbar span {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      background-color: #e08f7f;
+      background-image: -webkit-linear-gradient(#e08f7f, #9f3b26);
+      background-image: linear-gradient(#e08f7f, #9f3b26);
+      margin-right: 0px; }
 
 /*# sourceMappingURL=all.css.map */
