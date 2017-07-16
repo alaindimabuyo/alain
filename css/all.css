@@ -214,7 +214,7 @@ h3 {
       margin-right: 0px; }
 
 .worksection {
-  background: #ffd2a6; }
+  background: #FFE4B2; }
 
 .thumbNails {
   max-width: 900px;
@@ -233,7 +233,7 @@ h3 {
     padding-top: 20%;
     overflow: hidden;
     margin-bottom: 20px;
-    background-image: url("/img/fiora.png");
+    background-image: url(../img/fiora.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
