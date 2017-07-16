@@ -5,7 +5,7 @@
         <div class = "thumbNails">
 
                 {% for thumbnail in site.data.layout.myworks %}
-                <a href = "{{site.baseurl}}" class = "thumbNail-smallbox-section" style = "background-image: url(/img/work/{{ thumbnail.folder }}/pic.png);">
+                <a href = "{{ site.baseurl }}{{../img/work/{{ thumbnail.folder }}/pic.png }}" class = "thumbNail-smallbox-section" style = "background-image: url(/img/work/{{ thumbnail.folder }}/pic.png);">
                     <div class = "thumbNail-effect">
                         <strong>{{ thumbnail.name }}</strong>
                         <div class="thumbNail-icon"> {% include icons/magnifier.html %} </div>
