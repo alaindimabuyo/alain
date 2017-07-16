@@ -90,8 +90,10 @@ footer {
   float: left;
   margin-right: 30px; }
 
-a {
-  margin-right: 16px; }
+.navfoot {
+  padding-right: 10px; }
+  .navfoot a {
+    margin-right: 16px; }
 
 .contentfoot {
   float: left; }
@@ -190,29 +192,71 @@ h3 {
   font-weight: 300%;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
 
-.skills {
-  max-width: 700px;
+.sskillan {
+  max-width: 540px;
   margin: 100px auto;
   color: #575757; }
-  .skills::after {
+  .sskillan::after {
     clear: both;
     content: "";
     display: table; }
-  .skills .skillsection {
-    width: 350px;
+  .sskillan .skillsection {
+    width: 270px;
     float: left; }
-  .skills .skillbar {
-    margin-bottom: 30px;
-    font-size: 0; }
-    .skills .skillbar span {
+  .sskillan .skillbar {
+    font-size: 0;
+    margin: 3px 0 30px; }
+    .sskillan .skillbar span {
       display: inline-block;
-      height: 10px;
-      width: 10px;
+      height: 14px;
+      width: 14px;
       background-color: #e08f7f;
       background-image: -webkit-linear-gradient(#e08f7f, #9f3b26);
       background-image: linear-gradient(#e08f7f, #9f3b26);
       margin-right: 0px; }
+      .sskillan .skillbar span:after {
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        margin: 2px; }
+    .sskillan .skillbar.skill-1 span:nth-child(n+2) {
+      background: #575757; }
+    .sskillan .skillbar.skill-2 span:nth-child(n+3) {
+      background: #575757; }
+    .sskillan .skillbar.skill-3 span:nth-child(n+4) {
+      background: #575757; }
+    .sskillan .skillbar.skill-4 span:nth-child(n+5) {
+      background: #575757; }
+    .sskillan .skillbar.skill-5 span:nth-child(n+6) {
+      background: #575757; }
+    .sskillan .skillbar.skill-6 span:nth-child(n+7) {
+      background: #575757; }
+    .sskillan .skillbar.skill-7 span:nth-child(n+8) {
+      background: #575757; }
+    .sskillan .skillbar.skill-8 span:nth-child(n+9) {
+      background: #575757; }
+    .sskillan .skillbar.skill-9 span:nth-child(n+10) {
+      background: #575757; }
+    .sskillan .skillbar.skill-10 span:nth-child(n+11) {
+      background: #575757; }
+    .sskillan .skillbar.skill-11 span:nth-child(n+12) {
+      background: #575757; }
+    .sskillan .skillbar.skill-12 span:nth-child(n+13) {
+      background: #575757; }
+    .sskillan .skillbar.skill-13 span:nth-child(n+14) {
+      background: #575757; }
+    .sskillan .skillbar.skill-14 span:nth-child(n+15) {
+      background: #575757; }
+    .sskillan .skillbar.skill-15 span:nth-child(n+16) {
+      background: #575757; }
 
+@media screen and (max-width: 541px) {
+  .skillname {
+    width: 220px; }
+
+  .skillsection {
+    width: 220px; } }
 .worksection {
   background: #FFE4B2; }
 

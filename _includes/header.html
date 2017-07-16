@@ -3,16 +3,16 @@
   <div class = "logo">{% include icons/logo.html %}</div>
     <div class = "contenthead">
       <nav>
-        <a class= "navhead" href ="#about">About Me</a>
-        <a class= "navhead" href ="#work">Work</a>
-        <a class= "navhead" href ="#clients">Clients</a>
-        <a class= "navhead" href ="#contacts">Contacts</a>
+          {% for item in site.data.layout.menu %}
+                <a class = "navhead" href = '{{ item.url }}'> {{ item.name }} </a>
+          {% endfor %}
       </nav>
+
     </div>
 
 <div class = 'headtext'>
     <h1><span>ALAIN DIMABUYO</span></h1>
-    <p class = "kowt">Design is not just what it looks like. Design is how it works. </p>
+    <p class = "kowt">{{ site.data.layout.description}}</p>
 </div>
 
 </header>

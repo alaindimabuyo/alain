@@ -2,18 +2,21 @@
 
 <div class = "lock">
   <div class = "logofoot">{% include icons/logo.html %}</div>
+
     <div class = "contentfoot">
       <nav>
-        <a class= "navfoot" href ="#">Home</a>
-        <a class= "navfoot" href ="#">Works</a>
-        <a class= "navfoot" href ="#">Clients</a>
-        <a class= "navfoot" href ="#">Contacts</a>
+
+            {% for item in site.data.layout.menu %}
+              <a class="navfoot" href = "{{ item.url}}"> {{ item.name }} </a>
+            {% endfor %}
+
+      </nav>
 
         <p class = "copyright"> All Rights Reserved 2017 </p>
       </nav>
     </div>
-  </div>
 
+  </div>
 
 </div>
 

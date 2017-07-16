@@ -7,96 +7,29 @@
     <div class ='cake'>{% include icons/cake.html %} </div>
   </div>
 
-  <p class= "lorem"> <strong>I enjoy the simple things in life.</strong> Being happy is a state of mind, and I don't think people should
-settle for less than they deserve. I always look toward the next best thing. I like seeing other
-people happy. When someone else is down, it breaks my heart. I've been through more
-than most people my age, but hey, it's what has made me stronger. Life has thrown me
-challenges, and so far, I've come out on top. I realized who my real friends are, and that
-my family always comes first..always. There is more to life
-than beauty on the outside. It's about what's on the inside. That's what really counts.</p>
+  <div class = "lorem">
+    {{ site.data.layout.lorem | markdownify }}
+  </div>
 
+  {% if site.data.layout.skills %}
 
-  <div class = "skills">
+  <div class = "sskillan">
 
-    <div class = "skillsection">
-        <div class = "skillname">Communication</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
+          {% for skill in site.data.layout.skills %}
 
-    <div class = "skillsection">
-        <div class = "skillname">Learning</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
+            <div class = "skillsection">
+                <div class = "skillname">{{ skill.name }}</div>
+                  <div class = "skillbar skill-{{ skill.value }}">
+                          {% for i in (1..15) %}
+                              <span></span>
+                          {% endfor %}
+                  </div>
+            </div>
 
-    <div class = "skillsection">
-        <div class = "skillname">Visual Design</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </div>
-    </div>
+          {% endfor %}
+  </div>
 
-    <div class = "skillsection">
-        <div class = "skillname">Planning</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
-
-    <div class = "skillsection">
-        <div class = "skillname">Organizing</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span>
-        </div>
-    </div>
-
-    <div class = "skillsection">
-        <div class = "skillname">Teaching</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-
-        </div>
-    </div>
-
-    <div class = "skillsection">
-        <div class = "skillname">UI/UX</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
-
-    <div class = "skillsection">
-        <div class = "skillname">Programming</div>
-        <div class = "skillbar">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </div>
-
+  {% endif %}
 
 
 </section>

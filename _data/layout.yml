@@ -1,0 +1,50 @@
+#alainpogi Settings
+title: My Portfolio
+email: cutelykamanalo11@yahoo.com
+description: Design is not just what it looks like. Design is how it works.
+
+#tabs
+menu:
+  - {name: About Me, url: '#about'}
+  - {name: Work, url: '#work'}
+  - {name: Clients, url: '#clients'}
+  - {name: Contacts, url: '#contacts'}
+
+#skillsetaboutme
+skills:
+  - {name: Communication, value: '10'}
+  - {name: Learning, value: '11'}
+  - {name: Visual Design, value: '10'}
+  - {name: Planning, value: '10'}
+  - {name: Organizing, value: '12'}
+  - {name: Teaching, value: '7'}
+  - {name: UI/UX, value: '10'}
+  - {name: Programming, value: '10'}
+
+
+#longassparagraph
+lorem: >
+  **I enjoy the simple things in life. Being happy is a state of mind, and I don't think people should
+  settle for less than they deserve. I always look toward the next best thing. I like seeing other
+  people happy. When someone else is down, it breaks my heart. I've been through more
+  than most people my age, but hey, it's what has made me stronger. Life has thrown me
+  challenges, and so far, I've come out on top. I realized who my real friends are, and that
+  my family always comes first..always. There is more to life
+  than beauty on the outside. It's about what's on the inside. That's what really counts.
+
+
+
+
+
+
+
+
+
+#Skills
+
+
+#Seo section
+seo:
+ description: 'Alain Portfolio'
+ rel-author: 'https://plus.google.com/u/0/+alaindimabuyo/'
+ rel-publisher: 'https://plus.google.com/u/0/+alaindimabuyo/'

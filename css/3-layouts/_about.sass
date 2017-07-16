@@ -65,22 +65,42 @@ h3
   font-weight: 300%
   font-family: $georgia
 
-.skills
-  max-width: 700px
+.sskillan
+  max-width: 540px
   margin: 100px auto
   color: #575757
   +clearfix
 
+
   .skillsection
-    width: 350px
+    width: 270px
     float: left
 
-
   .skillbar
-    margin-bottom: 30px
     font-size: 0
+    margin: 3px 0 30px
+
     span
       display: inline-block
-      +size(10px)
+      +size(14px)
       @include linear-gradient(#e08f7f, #9f3b26)
       margin-right: 0px
+
+      &:after
+        display: block
+        +size(10px)
+        background: #fff
+        margin: 2px
+
+    @for $i from 1 through 15
+      &.skill-#{$i} span:nth-child(n+#{$i+1})
+        background: #575757
+
+
+@media screen and (max-width: 541px)
+    .skillname
+      width: 220px
+
+
+    .skillsection
+      width: 220px

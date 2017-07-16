@@ -1,13 +1,9 @@
-#alainpogi Settings
-title: My Portfolio
-email: cutelykamanalo11@yahoo.com
-description: Design is not just what it looks like. Design is how it works.
-baseurl: "/alain"
 
 #Build Settings
 markdown: kramdown
 permalink: pretty
+baseurl: "/alain"
 
 sass:
   sass_dir: css/css
-  style: :compressed
+  style: :nested
