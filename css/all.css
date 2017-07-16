@@ -213,4 +213,61 @@ h3 {
       background-image: linear-gradient(#e08f7f, #9f3b26);
       margin-right: 0px; }
 
+.worksection {
+  background: #ffd2a6; }
+
+.thumbNails {
+  max-width: 900px;
+  padding-bottom: 100px;
+  margin: 0 auto; }
+  .thumbNails::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .thumbNails .thumbNail-smallbox-section {
+    display: block;
+    width: 20%;
+    float: left;
+    padding-right: 28px;
+    position: relative;
+    padding-top: 20%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-image: url("/img/fiora.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .thumbNails .thumbNail-smallbox-section .thumbNail-effect {
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      left: 0px;
+      background: rgba(90, 98, 27, 0.7);
+      height: 100%;
+      text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .thumbNails .thumbNail-smallbox-section .thumbNail-effect strong {
+        padding-top: 40px;
+        display: block;
+        color: #c9d756;
+        font-family: "Verdana", "Geneva", sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.2;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center center;
+        top: 100em;
+        text-align: center; }
+    .thumbNails .thumbNail-smallbox-section .thumbNail-icon {
+      padding-top: 15px; }
+    .thumbNails .thumbNail-smallbox-section:hover .thumbNail-effect {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px; }
+
 /*# sourceMappingURL=all.css.map */

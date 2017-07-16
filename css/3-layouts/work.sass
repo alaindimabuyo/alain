@@ -1,0 +1,58 @@
+.worksection
+  background: #ffd2a6
+
+
+.thumbNails
+  max-width: 900px
+  padding-bottom: 100px
+  +clearfix
+  margin: 0  auto
+
+
+  .thumbNail-smallbox-section
+    display: block
+    width: 20%
+    float: left
+    padding-right: 28px
+    position: relative
+    padding-top: 20%
+    overflow: hidden
+    margin-bottom: 20px
+
+    background:
+      image: url("/img/fiora.png")
+      repeat: no-repeat
+      position: center
+      size: cover
+
+    .thumbNail-effect
+      +position(absolute, 100% 0px null 0px)
+      background: transparentize(#5a621b, 0.3)
+      height: 100%
+      text-align: center
+      +transition
+
+      strong
+        padding-top: 40px
+        display: block
+        color: #c9d756
+        font-family: $verdana
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 300
+        line-height: 1.2
+        width: 80%
+        margin: 0 auto
+        text-align: center center
+        top: 100em
+        text-align: center
+
+    .thumbNail-icon
+      padding-top: 15px
+
+
+
+
+
+    &:hover  .thumbNail-effect
+      +position(absolute, 0% 0px null 0px)
