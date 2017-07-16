@@ -33,15 +33,16 @@ lorem: >
   than beauty on the outside. It's about what's on the inside. That's what really counts.
 
 
-
-
-
-
-
-
-
-#Skills
-
+#worksection
+myworks:
+  - {name: Photography, folder: 'work1'}
+  - {name: Drawings and Speedpaint, folder: 'work2'}
+  - {name: Logo, folder: 'work3'}
+  - {name: Web Designs, folder: 'work4'}
+  - {name: Layouts, folder: 'work5'}
+  - {name: Signature Tags, folder: 'work6'}
+  - {name: Motion Graphics, folder: 'work7'}
+  - {name: Videography, folder: 'work8'}
 
 #Seo section
 seo:

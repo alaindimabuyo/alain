@@ -4,78 +4,16 @@
 
         <div class = "thumbNails">
 
-                <a href = "#" class = "thumbNail-smallbox-section">
+                {% for thumbnail in site.data.layout.myworks %}
+                <a href = "#" class = "thumbNail-smallbox-section" style = "background-image: url(/img/work/{{ thumbnail.folder }}/pic.png);">
 
                     <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
+                        <strong>{{ thumbnail.name }}</strong>
                         <div class="thumbNail-icon"> {% include icons/magnifier.html %} </div>
 
                     </div>
                 </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon">{% include icons/magnifier.html %} </div>
-
-                    </div>
-                </a>
-
-                <a href = "" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon"> {% include icons/magnifier.html %}</div>
-
-                    </div>
-                </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon"> {% include icons/magnifier.html %}</div>
-
-                    </div>
-                </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon">{% include icons/magnifier.html %} </div>
-
-                    </div>
-                </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect </strong>
-                        <div class="thumbNail-icon"> {% include icons/magnifier.html %} </div>
-
-                    </div>
-                </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon">{% include icons/magnifier.html %} </div>
-                    </div>
-
-                </a>
-
-                <a href = "#" class = "thumbNail-smallbox-section">
-
-                    <div class = "thumbNail-effect">
-                        <strong>Thumbnail effect text</strong>
-                        <div class="thumbNail-icon"> {% include icons/magnifier.html %}</div>
-                    </div>
-
-                </a>
-
+                {% endfor %}
 
         </div>
 
