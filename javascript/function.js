@@ -1,3 +1,8 @@
+$(function() {
+	smoothScroll(300);
+});
+
+
 function smoothScroll (duration) {
  	      $('a[href^="#"]').on('click', function(event) {
 
@@ -10,4 +15,5 @@ function smoothScroll (duration) {
  	              }, duration);
  	            }
  	       });
+
 }

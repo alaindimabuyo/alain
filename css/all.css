@@ -146,30 +146,25 @@ h3 {
   width: 171px;
   background: url(../img/face.jpg); }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 512px) {
   .circles {
-    display: block;
-    text-align: center; }
-
-  .toga {
-    float: left;
-    padding-top: 200px;
-    padding-left: 100px; }
-
-  .cake {
-    float: right;
-    padding-top: 28px;
-    padding-right: 70px; }
+    text-align: center;
+    background-position: center center; }
 
   .lorem {
     margin-top: 200px;
-    padding-top: 100px; }
+    padding-top: 100px;
+    text-align: center; }
 
   .face {
-    display: block;
-    background-position: center center;
-    width: auto;
-    background-repeat: no-repeat; } }
+    height: 100px;
+    width: 100px;
+    background-size: cover; } }
+  @media screen and (max-width: 512px) and (max-width: 440px) {
+    .face {
+      height: 0px;
+      width: 0px; } }
+
 .toga {
   height: 100px;
   width: 100px;
@@ -251,36 +246,48 @@ h3 {
     .sskillan .skillbar.skill-15 span:nth-child(n+16) {
       background: #575757; }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 572px) {
   .skillname {
     width: 220px; }
 
   .skillsection {
-    width: 220px; } }
+    width: 220px;
+    margin: 0 auto;
+    padding-left: 150px; } }
 .worksection {
   background: url(../img/workbg.png);
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-size: cover; }
 
 .thumbNails {
-  max-width: 1000px;
+  max-width: 700px;
   margin: 0 auto;
   border: white solid 20px; }
   .thumbNails::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 772px) {
+    .thumbNails {
+      max-width: 500px; } }
   .thumbNails .thumbNail-smallbox-section {
     display: block;
-    width: 20%;
+    width: 40%;
     float: left;
     position: relative;
-    padding-right: 50px;
+    padding-right: 70px;
     padding-top: 30%;
     overflow: hidden;
     background-image: url(../img/work/work1/asd.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
+    @media screen and (max-width: 772px) {
+      .thumbNails .thumbNail-smallbox-section {
+        width: 40%;
+        float: left;
+        padding-right: 60%;
+        padding-top: 50%; } }
     .thumbNails .thumbNail-smallbox-section .thumbNail-effect {
       position: absolute;
       top: 100%;
@@ -291,7 +298,16 @@ h3 {
       text-align: center;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
+      transition: all 0.15s ease-out 0s;
+      -webkit-box-pack: distribute;
+      -moz-box-pack: distribute;
+      box-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute; }
       .thumbNails .thumbNail-smallbox-section .thumbNail-effect strong {
         padding-top: 40px;
         display: block;

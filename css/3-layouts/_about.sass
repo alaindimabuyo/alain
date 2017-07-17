@@ -17,32 +17,24 @@ h3
   +size(171px)
   background: url(../img/face.jpg)
 
-@media screen and (max-width: 520px)
+@media screen and (max-width: 512px)
   .circles
-    display: block
     text-align: center
+    background-position: center center
 
-  .toga
-    float: left
-    padding-top: 200px
-    padding-left: 100px
 
-  .cake
-    float: right
-    padding-top: 28px
-    padding-right: 70px
 
   .lorem
     margin-top: 200px
     padding-top: 100px
-
-
+    text-align: center
 
   .face
-    display: block
-    background-position: center center
-    width: auto
-    background-repeat: no-repeat
+    +size(100px)
+    background-size: cover
+    @media screen and (max-width: 440px)
+      +size(0px)
+
 
 .toga
   +size(100px)
@@ -97,10 +89,13 @@ h3
         background: #575757
 
 
-@media screen and (max-width: 541px)
+@media screen and (max-width: 572px)
     .skillname
       width: 220px
 
 
+
     .skillsection
       width: 220px
+      margin: 0 auto
+      padding-left: 150px
