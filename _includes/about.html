@@ -2,9 +2,23 @@
   <h3 id = "about"> About Myself </h3>
 
   <div class = 'circles'>
-    <div class ='toga'>{% include icons/toga.html %}</div>
+
+    <div class ='toga'>
+      {% include icons/toga.html %}
+      <div class="tooltip">
+        <p>2013 - 2017</p>
+      </div>
+    </div>
+
     <div class ='face'></div>
-    <div class ='cake'>{% include icons/cake.html %} </div>
+
+    <div class ='cake'>
+      {% include icons/cake.html %}
+      <div class="tooltip">
+        <p>September 10</p>
+      </div>
+    </div>
+
   </div>
 
   <div class = "lorem">
@@ -31,5 +45,8 @@
 
   {% endif %}
 
+<div class ="tooltip">
+
+</div>
 
 </section>

@@ -1,5 +1,5 @@
 h3 {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   font-family: "Verdana", "Geneva", sans-serif; }
 
@@ -166,15 +166,96 @@ h3 {
       width: 0px; } }
 
 .toga {
-  height: 100px;
-  width: 100px;
-  margin-right: 50px; }
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center; }
+  .toga:focus, .toga:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  .toga .tooltip {
+    position: absolute;
+    right: 0;
+    bottom: -3em;
+    left: 0;
+    background-color: #D15941;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px silver;
+    color: #333;
+    font-size: 0.9em hidden 1px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 16em;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 10; }
+    .toga .tooltip p {
+      color: #D15941;
+      line-height: 1.5em;
+      margin: 0;
+      font-family: "Verdana", "Geneva", sans-serif;
+      font-size: 10px; }
+    .toga .tooltip::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border: 2px solid transparent;
+      bottom: 1.3em;
+      color: #D15941;
+      font-size: 1.4em;
+      margin-left: -2px;
+      text-align: center;
+      text-shadow: 0 2px 2px silver; }
 
 .cake {
-  height: 100px;
-  width: 100px;
-  margin-left: 50px;
-  padding-left: 10px; }
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center; }
+  .cake:focus, .cake:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  .cake .tooltip {
+    position: absolute;
+    right: 0;
+    bottom: -3em;
+    left: 0;
+    background-color: #D15941;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px silver;
+    color: #333;
+    font-size: 0.9em hidden 1px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 16em;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 10; }
+    .cake .tooltip p {
+      color: #D15941;
+      line-height: 1.5em;
+      margin: 0;
+      font-family: "Verdana", "Geneva", sans-serif;
+      font-size: 10px; }
+    .cake .tooltip::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border: 2px solid transparent;
+      bottom: 1.3em;
+      color: #D15941;
+      font-size: 1.4em;
+      margin-left: -2px;
+      text-align: center;
+      text-shadow: 0 2px 2px silver; }
 
 .lorem {
   color: #575757;
